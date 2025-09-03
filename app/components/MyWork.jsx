@@ -16,7 +16,7 @@ const projects = [
   },
   {
     title: "ResuMind",
-    description: "Smart Resume Feedback Web App",
+    description: "Smart Resume Feedback Web AppAI-powered smart resume feedback web app to analyze, score, and improve your resume with actionable insights.",
     image: assets.resumind,
     tech: [<Rocket className="w-5 h-5 text-amber-500" />, <Code className="w-5 h-5 text-purple-500" />],
     demo: "https://resumind-neon.vercel.app/",
