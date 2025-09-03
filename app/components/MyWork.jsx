@@ -36,7 +36,8 @@ const MyWork = () => {
   return (
     <div id="work" className="w-full px-[12%] py-16 scroll-mt-20 font-ovo bg-gray-50 relative">
       {/* Small subtitle */}
-      <motion.h4 className="text-center mb-2 text-lg text-gray-600"
+      <motion.h4
+        className="text-center mb-2 text-lg text-gray-600"
         initial={{ opacity: 0, y: -10 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
@@ -45,7 +46,8 @@ const MyWork = () => {
       </motion.h4>
 
       {/* Main heading */}
-      <motion.h2 className="text-center text-5xl font-bold mb-14"
+      <motion.h2
+        className="text-center text-5xl font-bold mb-14"
         initial={{ opacity: 0, y: -10 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, delay: 0.2 }}
@@ -54,20 +56,26 @@ const MyWork = () => {
       </motion.h2>
 
       {/* Project Grid */}
-      <motion.div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10"
+      <motion.div
+        className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10"
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true }}
         variants={{ visible: { transition: { staggerChildren: 0.2 } } }}
       >
         {projects.map(({ title, description, image, tech, demo, github }, index) => (
-          <motion.div key={index}
-            className="relative rounded-3xl border border-gray-300 shadow-md hover:shadow-lg hover:-translate-y-1 hover:scale-105 hover:ring-2 hover:ring-black transition-all duration-300 overflow-hidden bg-white/70 backdrop-blur-sm"
+          <motion.div
+            key={index}
+            className="relative shadow-md hover:shadow-lg hover:-translate-y-1 hover:scale-105 hover:ring-2 hover:ring-black transition-all duration-300 bg-white/70 backdrop-blur-sm"
             variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0 } }}
           >
             {/* Project Image */}
-            <div className="w-full h-52 relative overflow-hidden">
-              <Image src={image} alt={title} className="w-full h-full object-cover object-center" />
+            <div className="w-full h-52 relative border-2 border-gray-300 shadow-sm bg-white">
+              <Image
+                src={image}
+                alt={title}
+                className="w-full h-full object-cover object-center rounded-none"
+              />
             </div>
 
             {/* Project Info */}
