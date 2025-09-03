@@ -37,13 +37,14 @@ const MyWork = () => {
     <div id="work" className="w-full px-[12%] py-16 scroll-mt-20 font-ovo bg-gray-50 relative">
       {/* Small subtitle */}
       <motion.h4
-        classNaManagerme="text-center mb-2 text-lg text-gray-600"
+        className="text-center mb-2 text-gray-600"
         initial={{ opacity: 0, y: -10 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
       >
         What I’ve built
       </motion.h4>
+
 
       {/* Main heading */}
       <motion.h2
@@ -66,9 +67,10 @@ const MyWork = () => {
         {projects.map(({ title, description, image, tech, demo, github }, index) => (
           <motion.div
             key={index}
-            className="relative shadow-md hover:shadow-lg hover:-translate-y-1 hover:scale-105 hover:ring-2 hover:ring-black transition-all duration-300 bg-white/70 backdrop-blur-sm"
+            className="relative shadow-md hover:shadow-lg hover:-translate-y-1 hover:scale-105 transition-all duration-300 bg-white/70 backdrop-blur-sm"
             variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0 } }}
           >
+
             {/* Project Image */}
             <div className="w-full h-52 relative border-2 border-gray-300 shadow-sm bg-white">
               <Image
