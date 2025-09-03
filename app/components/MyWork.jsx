@@ -15,20 +15,20 @@ const projects = [
     github: "#"
   },
   {
-    title: "Smart Finance Manager",
-    description: "Web app to track income, expenses, and visualize insights.",
-    image: assets.project_finance,
-    tech: [<Cpu className="w-5 h-5 text-yellow-500" />, <Server className="w-5 h-5 text-green-500" />],
-    demo: "#",
-    github: "#"
-  },
-  {
     title: "ResuMind",
     description: "Smart Resume Feedback Web App",
     image: assets.resumind,
     tech: [<Rocket className="w-5 h-5 text-amber-500" />, <Code className="w-5 h-5 text-purple-500" />],
     demo: "https://resumind-neon.vercel.app/",
     github: "https://github.com/jpriyanshu171/RESUMIND"
+  },
+  {
+    title: "eBankManager",
+    description: "A Java Swing-based banking app that lets users sign up, log in, and manage account balances with deposit, withdrawal, and balance enquiry. Data is saved locally for persistence.",
+    image: assets.project_finance,
+    tech: [<Cpu className="w-5 h-5 text-yellow-500" />, <Server className="w-5 h-5 text-green-500" />],
+    demo: "#",
+    github: "https://github.com/jpriyanshu171/eBankManager"
   },
 ];
 
@@ -37,7 +37,7 @@ const MyWork = () => {
     <div id="work" className="w-full px-[12%] py-16 scroll-mt-20 font-ovo bg-gray-50 relative">
       {/* Small subtitle */}
       <motion.h4
-        className="text-center mb-2 text-lg text-gray-600"
+        classNaManagerme="text-center mb-2 text-lg text-gray-600"
         initial={{ opacity: 0, y: -10 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
