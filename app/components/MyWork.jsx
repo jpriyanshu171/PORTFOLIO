@@ -25,7 +25,7 @@ const projects = [
   {
     title: "eBankManager",
     description: "A Java Swing-based banking app that lets users sign up, log in, and manage account balances with deposit, withdrawal, and balance enquiry. Data is saved locally for persistence.",
-    image: assets.project_finance,
+    image: assets.ebankmanager,
     tech: [<Cpu className="w-5 h-5 text-yellow-500" />, <Server className="w-5 h-5 text-green-500" />],
     demo: "#",
     github: "https://github.com/jpriyanshu171/eBankManager"

@@ -41,7 +41,7 @@ import canva from './canva.png';
 import eclipse from './eclipse.png';
 import intellij_idea from './intellij-idea.png';
 import project_mailpilot from './project_mailpilot.png'; // put MailPilot screenshot in assets
-import project_finance from './project_finance.png'; // put Finance Manager screenshot in assets
+import ebankmanager from './ebankmanager.png'; // put Finance Manager screenshot in assets
 import resumind from './resumind.png';
 import java from './java.png';
 import python from './python.png';
@@ -104,7 +104,7 @@ export const assets = {
     eclipse,
     intellij_idea,
     project_mailpilot,
-    project_finance,
+    ebankmanager,
     resumind,
     java,
     python,
