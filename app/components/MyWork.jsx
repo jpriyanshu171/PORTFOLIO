@@ -23,12 +23,12 @@ const projects = [
     github: "#"
   },
   {
-    title: "Could be Something",
-    description: "A placeholder for your next cool project — AI, automation, or web app!",
-    image: assets.project_placeholder,
+    title: "ResuMind",
+    description: "Smart Resume Feedback Web App",
+    image: assets.resumind,
     tech: [<Rocket className="w-5 h-5 text-amber-500" />, <Code className="w-5 h-5 text-purple-500" />],
-    demo: "#",
-    github: "#"
+    demo: "https://resumind-neon.vercel.app/",
+    github: "https://github.com/jpriyanshu171/RESUMIND"
   },
 ];
 
