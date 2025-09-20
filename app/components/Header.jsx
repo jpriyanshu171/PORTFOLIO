@@ -56,7 +56,7 @@ const Header = () => {
       {/* Skills (lightweight rotation) */}
       <div className="h-12 flex items-center gap-3 justify-center mb-4 transition-all duration-500 ease-in-out">
         {skills[index].icon}
-        <span className='text-3xl sm:text-5xl lg:text-6xl font-bold text-center'>
+        <span className='text-3xl sm:text-5xl lg:text-5xl font-bold text-center'>
           {skills[index].text}
         </span>
       </div>
