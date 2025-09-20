@@ -8,7 +8,7 @@ import { motion } from "framer-motion";
 const projects = [
   {
     title: "MailPilot",
-    description: "AI-powered email assistant and smart inbox manager.",
+    description: "Mailpilot is a Spring Boot–based AI email reply generator that works like an intelligent extension for drafting professional responses.",
     image: assets.project_mailpilot,
     tech: [<Code className="w-5 h-5 text-rose-500" />, <LayoutDashboard className="w-5 h-5 text-blue-500" />],
     demo: "https://github.com/jpriyanshu171/MAILPILOT-EXTENSION",
