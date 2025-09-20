@@ -24,16 +24,16 @@ const Header = () => {
   }, []);
 
   return (
-    <div className='w-full px-[12%] py-16 h-[calc(100vh-4rem)] mt-16 flex flex-col items-center justify-center gap-6 font-ovo bg-gray-50 scroll-mt-20 relative'>
+    <div className='w-full px-[12%] py-16 min-h-[calc(100vh-4rem)] mt-8 flex flex-col items-center justify-start sm:justify-center gap-6 font-ovo bg-gray-50 scroll-mt-20 relative'>
 
       {/* Profile Image */}
       <motion.div 
-        className='relative w-32 sm:w-40 mb-4'
+        className='relative w-40 sm:w-52 md:w-56 mb-4'
         initial={{ scale: 0, opacity: 0 }}
         animate={{ scale: 1, opacity: 1 }}
         transition={{ duration: 0.8 }}
       >
-        <div className='absolute -inset-4 rounded-full bg-gray-900/20 blur-3xl -z-10'></div>
+        <div className='absolute -inset-6 rounded-full bg-gray-900/20 blur-3xl -z-10'></div>
         <div className='rounded-full border border-gray-300 shadow-md hover:shadow-lg hover:-translate-y-2 hover:scale-105 hover:ring-2 hover:ring-black transition-all duration-300 overflow-hidden'>
           <Image 
             src={assets.profile_img} 
@@ -45,7 +45,7 @@ const Header = () => {
 
       {/* Subtitle */}
       <motion.h4 
-        className='text-lg text-gray-600 mb-2'
+        className='text-lg text-gray-600 mb-2 text-center'
         initial={{ opacity: 0, y: -10 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.3 }}
@@ -56,7 +56,7 @@ const Header = () => {
       {/* Skills (lightweight rotation) */}
       <div className="h-12 flex items-center gap-3 justify-center mb-4 transition-all duration-500 ease-in-out">
         {skills[index].icon}
-        <span className='text-3xl sm:text-5xl lg:text-6xl font-bold'>
+        <span className='text-2xl sm:text-4xl lg:text-5xl font-bold text-center'>
           {skills[index].text}
         </span>
       </div>
