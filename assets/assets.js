@@ -40,8 +40,8 @@ import postman from './postman.png';
 import canva from './canva.png';
 import eclipse from './eclipse.png';
 import intellij_idea from './intellij-idea.png';
-import project_mailpilot from './project_mailpilot.png'; // put MailPilot screenshot in assets
-import ebankmanager from './ebankmanager.png'; // put Finance Manager screenshot in assets
+import project_mailpilot from './project_mailpilot.png';
+import ebankmanager from './ebankmanager.png';
 import resumind from './resumind.png';
 import java from './java.png';
 import python from './python.png';

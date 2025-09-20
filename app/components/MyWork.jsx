@@ -11,8 +11,8 @@ const projects = [
     description: "AI-powered email assistant and smart inbox manager.",
     image: assets.project_mailpilot,
     tech: [<Code className="w-5 h-5 text-rose-500" />, <LayoutDashboard className="w-5 h-5 text-blue-500" />],
-    demo: "#",
-    github: "#"
+    demo: "https://github.com/jpriyanshu171/MAILPILOT-EXTENSION",
+    github: "https://github.com/jpriyanshu171/MAILPILOT-BACKEND"
   },
   {
     title: "ResuMind",
@@ -27,7 +27,7 @@ const projects = [
     description: "A Java Swing-based banking app that lets users sign up, log in, and manage account balances with deposit, withdrawal, and balance enquiry. Data is saved locally for persistence.",
     image: assets.ebankmanager,
     tech: [<Cpu className="w-5 h-5 text-yellow-500" />, <Server className="w-5 h-5 text-green-500" />],
-    demo: "#",
+    demo: "https://github.com/jpriyanshu171/eBankManager",
     github: "https://github.com/jpriyanshu171/eBankManager"
   },
 ];

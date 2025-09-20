@@ -3,7 +3,7 @@ import { assets } from '@/assets/assets';
 import Image from 'next/image';
 import React, { useState, useEffect } from 'react';
 import { Code, LayoutDashboard, Server, Cpu, Zap } from "lucide-react";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion } from "framer-motion";
 
 const skills = [
   { text: "Full Stack Developer", icon: <Code className="w-6 h-6 text-rose-500" /> },
@@ -18,17 +18,17 @@ const Header = () => {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setIndex(prev => (prev + 1) % skills.length);
-    }, 1500);
+      setIndex((prev) => (prev + 1) % skills.length);
+    }, 2000);
     return () => clearInterval(interval);
   }, []);
 
   return (
-    <div className='w-full px-[12%] py-20 h-screen flex flex-col items-center justify-center gap-6 font-ovo bg-gray-50 scroll-mt-20 relative'>
+    <div className='w-full px-[12%] py-16 h-[calc(100vh-4rem)] mt-16 flex flex-col items-center justify-center gap-6 font-ovo bg-gray-50 scroll-mt-20 relative'>
 
-      {/* Profile Image with blob */}
+      {/* Profile Image */}
       <motion.div 
-        className='relative w-40 sm:w-48 mb-6'
+        className='relative w-32 sm:w-40 mb-4'
         initial={{ scale: 0, opacity: 0 }}
         animate={{ scale: 1, opacity: 1 }}
         transition={{ duration: 0.8 }}
@@ -43,7 +43,7 @@ const Header = () => {
         </div>
       </motion.div>
 
-      {/* Small Subtitle */}
+      {/* Subtitle */}
       <motion.h4 
         className='text-lg text-gray-600 mb-2'
         initial={{ opacity: 0, y: -10 }}
@@ -53,29 +53,21 @@ const Header = () => {
         Hi, I'm Priyanshu Jaiswal
       </motion.h4>
 
-      {/* Animated Skills */}
-      <AnimatePresence mode="wait">
-        <motion.div 
-          key={skills[index].text} 
-          className='flex items-center gap-3 justify-center mb-4'
-          initial={{ opacity: 0, y: 10 }}
-          animate={{ opacity: 1, y: 0 }}
-          exit={{ opacity: 0, y: -10 }}
-          transition={{ duration: 0.5 }}
-        >
-          {skills[index].icon}
-          <span className='text-3xl sm:text-5xl lg:text-6xl font-bold'>
-            {skills[index].text}
-          </span>
-        </motion.div>
-      </AnimatePresence>
+      {/* Skills (lightweight rotation) */}
+      <div className="h-12 flex items-center gap-3 justify-center mb-4 transition-all duration-500 ease-in-out">
+        {skills[index].icon}
+        <span className='text-3xl sm:text-5xl lg:text-6xl font-bold'>
+          {skills[index].text}
+        </span>
+      </div>
 
       {/* Tagline */}
       <motion.p
         className="text-center text-gray-700 max-w-2xl mb-6"
         initial={{ opacity: 0, y: 10 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 0.5 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.6 }}
       >
         I build interactive web applications and solve complex problems with clean code and smart algorithms.
       </motion.p>
@@ -84,8 +76,9 @@ const Header = () => {
       <motion.div 
         className='flex flex-col sm:flex-row items-center gap-4'
         initial={{ opacity: 0, y: 10 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 0.7 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ delay: 0.3, duration: 0.6 }}
       >
         <a href="#contact"
           className='px-10 py-3 border border-white rounded-full bg-black text-white flex items-center gap-2 hover:bg-rose-500 hover:border-rose-500 transition-all duration-300'>
