@@ -1,12 +1,10 @@
-GitHub Copilot Chat Assistant — here's a complete README.md template for the jpriyanshu171/PORTFOLIO repository. I included sensible defaults and placeholders you can quickly edit. Do you want me to fill any placeholders (name, email, live demo URL, screenshots) for you?
-
 ---
 
 # PORTFOLIO
 
 A personal portfolio website built with JavaScript to showcase projects, skills, and contact information.
 
-Live demo: [https://your-live-demo-url.example.com](https://your-live-demo-url.example.com) <!-- replace with actual URL or remove if none -->
+Live demo: [https://portfolio-jpriyanshu171.vercel.app/](https://portfolio-jpriyanshu171.vercel.app/) <!-- replace with actual URL or remove if none -->
 
 ## Table of contents
 - [About the project](#about-the-project)
@@ -154,19 +152,13 @@ If you'd like, they/them can set up a CONTRIBUTING.md and a CODE_OF_CONDUCT.md f
 
 ## License
 This project is licensed under the MIT License — see the LICENSE file for details.  
-(Replace with the license you prefer, or add a LICENSE file.)
 
 ## Acknowledgements
 - Inspirations, templates, and libraries you used (e.g., [HTML5 UP], [unsplash], UI kits)
 - Icons: Font Awesome, Feather Icons, or custom SVGs
-- Any tutorial or example repos that helped
 
 ## Contact
 Author: jpriyanshu171 (they/them)  
 GitHub: https://github.com/jpriyanshu171  
-Email: your-email@example.com <!-- replace with your contact email or remove -->
+Email: your-jpriyanshu171@gmail.com <!-- replace with your contact email or remove -->
 
-If you'd like, I can:
-- Fill in your name, email, live demo URL, and screenshots now.
-- Produce a shorter README or a README tailored to a specific framework (React, Vite, Next.js, etc.).
-Which would you prefer?
